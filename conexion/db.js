@@ -14,7 +14,7 @@ export const pool = new Pool({
      allowExitOnIdle: true,
    });
 try {
-  await pool.query("SELECT NOW()");
+  await pool.query("SELECT * from posts");
   console.log("Database connected");
 } catch (error) {
   console.log(error);
